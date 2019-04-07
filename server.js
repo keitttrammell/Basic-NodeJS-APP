@@ -8,13 +8,13 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 app.get('/', function(req, res, next) {  
-    res.render('index'); // rendering index.html
+    res.render('./index.html'); // rendering index.html
 });
 app.get('/table', function(req, res, next) {  
-    res.render('table'); // rendering table.html
+    res.render('./table.html'); // rendering table.html
 });
 app.get('/layout', function(req, res, next) {  
-    res.render('layout'); // rendering layout.html
+    res.render('./layout.html'); // rendering layout.html
 });
 
 
